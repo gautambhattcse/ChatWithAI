@@ -1,15 +1,14 @@
+// Note: Some hydration mismatch errors may appear due to browser extensions like Grammarly. These are safe to ignore unless seen in production.
+
 import { Geist, Geist_Mono } from "next/font/google";
+import { StackProvider, StackTheme } from "@stackframe/stack";
+import { stackServerApp } from "../stack";
 import "./globals.css";
+import Provider from "./provider";
+import ClientStyles from "./client-styles"; // Import client-side component
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = Geist({ subsets: ["latin"] });
+const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,10 +18,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head />
+      <body className="antialiased">
+        <StackProvider app={stackServerApp}>
+          <StackTheme>
+            <Provider>
+              {children}
+              <ClientStyles /> {/* Client-side styles */}
+            </Provider>
+          </StackTheme>
+        </StackProvider>
       </body>
     </html>
   );

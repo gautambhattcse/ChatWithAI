@@ -9,9 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "@deepgram/sdk": "^3.12.1",
+    "@picovoice/cheetah-web": "^2.1.1",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@stackframe/stack": "^2.7.27",
+    "assemblyai": "^4.12.2",
+    "axios": "^1.9.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "convex": "^1.21.0",
+    "isomorphic-ws": "^5.0.0",
+    "lucide-react": "^0.483.0",
+    "motion": "^12.6.3",
+    "next": "15.2.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "recordrtc": "^5.5.1",
+    "tailwind-merge": "^3.0.2",
+    "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
