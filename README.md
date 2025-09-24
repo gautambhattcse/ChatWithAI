@@ -1,6 +1,6 @@
 # ChatWithAI  
 
-ChatWithAI is an interactive AI-powered chatbot application designed to provide seamless conversations with AI models. It’s built with modern web technologies to deliver fast, reliable, and user-friendly experiences.  
+ChatWithAI is a SaaS-based AI voice agent for personalized mock interviews, lectures, and real-time voice Q&A. It’s built with modern web technologies to deliver fast, reliable, and user-friendly experiences.  
 
 ---
 
